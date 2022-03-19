@@ -24,6 +24,7 @@ background: linear-gradient(90deg, rgba(106,5,249,0.7819502801120448) 0%, rgba(9
 #title {
     font-size: 80px;
     align-items: center;
+    color: #1E1EF7 ;
 }
 
 #submit-container {
@@ -55,13 +56,37 @@ background: linear-gradient(90deg, rgba(106,5,249,0.7819502801120448) 0%, rgba(9
 
 #list_container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: column;
     width: 55%;
     margin: 40px auto;
     background-color: #19b5e6;
-    height: 40vh;
+    height: auto;
     color: white;
     opacity: 0.9;
     border-radius: 20px;
 
+}
+
+h2 {
+    margin: 10px;
+    color: #1E1EF7;
+}
+
+p {
+    font-size: 22px;
+}
+
+.tarefa_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.delete_button {
+    width: 70px;
+    height: 30px;
+    background-color: #00d4ff;
 }
