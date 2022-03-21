@@ -11,29 +11,35 @@ let trash = document.createElement('button')
 
 function main() {
     submit.addEventListener('click', function (){
-        // criar div
+        // Criação de uma tag <div> 
         let newDiv = document.createElement('div');
         newDiv.classList.add("tarefa_container");
-        // criar paragrafo
+
+        // Criação de uma tag <p> 
         let p = document.createElement('p');
-        //criar butao de apagar
+
+        //Criação de um butão de apagar elemento 
         let trash = document.createElement('button');
-        trash.innerHTML = "delete";
+        trash.innerHTML = "🗑️";
         trash.classList.add('delete_button');
-        //div por p e butao dentro
+
+        //Colocar o <p> e o butão dentro da <div>
         newDiv.appendChild(p);
         newDiv.appendChild(trash);
 
+        //Colocar a <Div> dentro do container
         list.appendChild(newDiv);
         p.innerText = input.value;
         p.addEventListener('click', function(){
             p.style.textDecoration = "line-through";
         })
+
+        // Função de apagar ao clicar no butão de apagar
         trash.addEventListener('click', function(){
         list.removeChild(newDiv)
+        })
     })
-    })
-
+        
     
 }
 
